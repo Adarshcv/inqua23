@@ -81,7 +81,9 @@ body{
     top: 20px;
     width: 100%;
     box-shadow: 0px 0px 100px 100px #111111;
-
+      background-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
 }
 /* .navbar:hover{
     animation: rotate1 1.5s linear;
@@ -149,8 +151,8 @@ a.signin
 }
 img.logo
 {
-    height: 300px;
-    height: 300px;
+    height: 250px;
+    height: 250px;
     margin: -50px;
     padding-bottom: 30px;
 }
@@ -343,3 +345,131 @@ img.logo
   .ticket{
     position: relative;
   }
+  .b1 {
+    height: 75vh;
+   padding-bottom: 0px;
+    padding-top: auto;
+    overflow:hidden;
+    display: grid;
+    place-content: center;
+    /*background: black;*/
+     display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    /*background-color: black;*/
+   
+  }
+  .box {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, orange, yellow), linear-gradient(#26262600, #14141400);
+    animation: rotate 1.5s linear infinite;
+}
+  
+  .box:before,
+  .box:after {
+    content: " ";
+    inset: 8px;
+    position: relative;
+    border-radius: inherit;
+  }
+
+  
+  .box:before {
+    background: linear-gradient(45deg, transparent, transparent 40%, yellow);
+    filter: blur(40px);
+    position: absolute;
+  }
+  
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+      filter: hue-rotate(360deg);
+    }
+  }
+  .inq1
+{
+        width: 512px;
+        height: auto;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 500px;
+        width: 50%;
+        z-index: 0;
+}
+.inqq1
+{
+        /*background-image: url("black.jpeg");*/
+        background-color: black;
+        color: #000;;
+        /* position: absolute;
+        top: 40%;
+        left: 40%; */
+        z-index: 2;
+        width: 290px;
+        height: 290px;
+        border-radius: 50%;
+      
+        
+}
+
+.cs2
+{
+        font-family: ocra;
+        color: white;
+        font-size: 36px;
+        position: absolute;
+        /* top: 40%;
+        left: 40%; */
+        /* position:fixed; */
+        padding-top: 520px;        
+}
+.cs3
+{
+        font-family: ocra;
+        color: white;
+        font-size: 36px;
+        position: absolute;
+        /* top: 40%;
+        left: 40%; */
+        /* position:fixed; */
+        padding-top:650px;        
+}
+.cs1
+{
+        font-family: origami;
+        color: white;
+        font-size: 70px;
+        position: absolute;
+        /* top: 40%;
+        left: 40%; */
+        /* position:fixed; */
+        padding-top: 400px;        
+}
+.ics
+{
+
+        /* position:fixed;     */
+        
+        width: 400px;  
+        z-index: 3;
+        position: absolute;
+        /* top: 40%;
+        left: 40%; */
+}
+@font-face {
+  font-family: origami;
+  src: url(Origami.ttf);
+}
+@font-face {
+  font-family: ocra;
+  src: url(OCRAEXT.TTF);
+}
+@font-face {
+  font-family: racer;
+  src: url(racer.ttf);
+}
